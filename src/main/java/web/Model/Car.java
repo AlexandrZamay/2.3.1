@@ -3,22 +3,22 @@ package web.Model;
 public class Car {
     public Car() {}
 
-    public Car(int maxSpeed, boolean isMechanical, String color) {
-        this.maxSpeed = maxSpeed;
+    public Car(int series, boolean isMechanical, String color) {
+        this.series = series;
         this.isMechanical = isMechanical;
         this.color = color;
     }
 
-    public int maxSpeed;
+    public int series;
     public boolean isMechanical;
     public String color;
 
-    public int getMaxSpeed() {
-        return maxSpeed;
+    public int getSeries() {
+        return series;
     }
 
-    public void setMaxSpeed(int maxSpeed) {
-        this.maxSpeed = maxSpeed;
+    public void setSeries(int series) {
+        this.series = series;
     }
 
     public boolean isMechanical() {
@@ -40,7 +40,7 @@ public class Car {
     @Override
     public String toString() {
         return "Car{" +
-                "maxSpeed=" + maxSpeed +
+                "maxSpeed=" + series +
                 ", isMechanical=" + isMechanical +
                 ", color='" + color + '\'' +
                 '}';

@@ -1,30 +1,12 @@
 package web.DAO;
 
-import org.springframework.stereotype.Component;
 import web.Model.Car;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-@Component
-public class CarsDAO {
-    List<Car> cars;
-    {
-            cars = new ArrayList<>();
 
-            cars.add(new Car(80, true, "green"));
-            cars.add(new Car(240, false, "white"));
-            cars.add(new Car(148, false, "black"));
-            cars.add(new Car(1337, false, "spaceGray"));
-            cars.add(new Car(150, true, "red"));
+public interface CarsDAO {
 
-
-
-    }
-    public List<Car> getCarList(Integer q) {
-        return cars.subList(0, q);
-    }
-    public List<Car> getCars() {
-        return cars;
-    }
+    public List<Car> getCarList(Integer q);
+    public int getListSize();
+ //   public List<Car> getCars();
 }

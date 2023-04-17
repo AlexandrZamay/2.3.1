@@ -9,20 +9,20 @@
 <div>
   <table>
     <tr>
-      <th>Speed</th>
-      <th>Color</th>
-      <th>Is Mechanical</th>
-    </tr>
-    <br>
+      <th>Series</th>
+<th>Color</th>
+<th>Is Mechanical</th>
+</tr>
+<br>
 
-    <th:block th:each="car : ${carList}">
-      <tr>
-        <td th:text="${car.getMaxSpeed()}"/>
-        <td th:text="${car.getColor()}"/>
-        <td th:text="${car.isMechanical()}"/>
-      </tr>
-    </th:block>
-  </table>
+<th:block th:each="car : ${carList}">
+  <tr>
+    <td th:text="${car.getSeries()}"/>
+    <td th:text="${car.getColor()}"/>
+    <td th:text="${car.isMechanical()}"/>
+  </tr>
+</th:block>
+</table>
 </div>
 <p> CarsList </p>
 <a href="/"> Hello Page</a>
