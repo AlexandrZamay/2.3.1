@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface UserDAO {
 
-    public void saveUser(String name, String surname);
+    public void saveUser(User user);
 
     public User getUser(long id);
 

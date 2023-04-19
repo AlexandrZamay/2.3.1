@@ -1,13 +1,14 @@
 package web.DAO;
 
+import org.springframework.stereotype.Component;
 import web.Model.User;
 
 import java.util.List;
-
+@Component
 public class UserDAOImpl implements UserDAO{
     @Override
-    public void saveUser(String name, String surname) {
-
+    public void saveUser(User user) { //добавление в БД
+        user.setId(6);//автоинкрементирование вместо 6
     }
 
     @Override
@@ -24,4 +25,7 @@ public class UserDAOImpl implements UserDAO{
     public void removeUserById(long id) {
 
     }
+
+
+
 }
