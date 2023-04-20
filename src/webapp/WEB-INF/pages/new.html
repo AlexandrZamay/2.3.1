@@ -9,6 +9,13 @@
 <form th:method="POST" th:action="@{/list}" th:object="${user}">
   <label for="name">Enter name: </label>
   <input type="text" th:field="*{name}" id="name"/>
+
+  <label for="salary">Set salary: </label>
+  <input type="text" th:field="*{salary}" id="salary"/>
+
+  <label for="email">Enter email: </label>
+  <input type="text" th:field="*{email}" id="email"/>
+
   <br/>
   <input type="submit" value="Create!"/>
 </form>

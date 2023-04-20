@@ -7,6 +7,8 @@
 <body>
 <p th:text = "${user.getName()}">TEXT</p>
 <p th:text = "${user.getId()}">TEXT</p>
+<p th:text = "${user.getSalary()}">TEXT</p>
+<p th:text = "${user.getEmail()}">TEXT</p>
 
 <a th:href ="@{/list/{id}/edit(id=${user.getId()})}">Edit</a>
 
