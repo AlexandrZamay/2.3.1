@@ -18,25 +18,6 @@ public class UsersController {
         this.userService = userService;
     }
 
-//    @GetMapping()
-//    public String getUsers(ModelMap model){
-//        List<User> listOfUser = new ArrayList<>();
-//        User user = new User("Vasya", "Pupkin", 1100);
-//        User user2 = new User("Kolya", "Perepelkin", 500);
-//        listOfUser.add(user);
-//        listOfUser.add(user2);
-//        model.addAttribute("users" , listOfUser);
-//        return "Users";
-//    }
-
-//    private User createUser(){
-//        User user = new User();
-//        user.setId(1);
-//        user.setName("Vasya");
-//        user.setSurname("Pupkin");
-//        user.setSalary(1200);
-//        return user;
-//    }
     @GetMapping()
     public String hello(Model model) {
         model.addAttribute("users", userService.getAllUsers());
